@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Floricultura</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <script src="script.js"></script>
+    <header>
+        <nav class="navbar">
+            <div class="logo">Floricultura Sayuri</div>
+            <div class="menu" id="manu">&#9776;</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="./index.html">Ínicio</a></li>
+                <li><a href="./flores.html">Flores</a></li>
+                <li><a href="./contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="grid-container">
+        <section class="intro">
+            <h1>Bem-vindo à Floricultura</h1>
+            <p>Flores que trazem alegria e cor para sua vida.</p>
+        </section>
+        <section class="produtos">
+            <h2>Nossas Flores</h2>
+            <div class="grid-produtos">
+                <div class="card" onclick="abrirModal('rosas')">
+                    <img src="imagens/rosas.png" alt="Rosas">
+                    <p>Rosas</p>
+                </div>
+                <div class="card" onclick="abrirModal('girassois')">
+                    <img src="imagens/girassois.png" alt="Girassóis">
+                    <p>Girassóis</p>
+                </div>
+                <div class="card" onclick="abrirModal('tulipas')">
+                    <img src="imagens/tulipa.png" alt="Tulipas">
+                    <p>Tulipas</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Floricultura Sayuri - Todos os direitos reservados</p>
+    </footer>
+
+    <script src="menu.js"></script>
+</body>
+</html>

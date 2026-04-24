@@ -1,0 +1,19 @@
+{
+    "name": "Floricultura_Sayuri",
+    "short_name": "Sayuri",
+    "display": "fullscreen",
+    "start_url":"index.html",    
+    "scope": "/",
+    
+    "icons": [
+        {
+            "src": "icons/app-icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/app-icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }]
+}

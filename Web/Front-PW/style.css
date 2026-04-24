@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    background: #f4f7fb;
+    color: #333;
+}
+
+header {
+    background: #1a73e8;
+    padding: 12px 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    opacity: 0.7;
+}
+
+.menu {
+    display: none;
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.intro {
+    text-align: center;
+    padding: 60px 20px 40px 20px;
+}
+
+.intro h1 {
+    font-size: 32px;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 18px;
+    color: #444;
+}
+
+.carousel-section {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.carousel {
+    position: relative;
+    width: 80%;
+    max-width: 1200px;
+    height: 350px;
+    overflow: hidden;
+    border-radius: 14px;
+    background: #ddd;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+    will-change: transform;
+}
+
+.carousel-item {
+    flex: 0 0 100%; 
+    width: 100%;
+    height: 350px;
+    object-fit: contain;
+    background: #f0f0f0; 
+}
+
+.carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.7);
+    border: none;
+    padding: 10px 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 24px;
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    z-index: 5;
+}
+
+.carousel-btn:hover {
+    background: #fff;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+    background: #1a73e8;
+    color: #fff;
+    font-size: 14px;
+}
+
+
+@media (max-width: 768px) {
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #1a73e8;
+        padding: 15px;
+        position: absolute;
+        right: 20px;
+        top: 60px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .menu {
+        display: block;
+    }
+
+    .intro h1 {
+        font-size: 26px;
+    }
+
+    .carousel {
+        width: 95%;
+        height: 250px;
+    }
+
+    .carousel-item {
+        height: 250px;
+    }
+}
+
